@@ -2,10 +2,11 @@
 
 echo "Enter the First Name"
 read firstName
-firstNameRegex="^[A-Z]{1}[a-z]{2,}$"
-if [[ $firstName =~ $firstNameRegex ]]
+nameRegex="^[A-Z]{1}[a-z]{2,}$"
+if [[ $firstName =~ $nameRegex ]]
 then
-	echo "first name Valid"
+	echo "Valid FirstName"
 else
-	echo "first name invalid"
+	echo "Invalid LastName"
 fi
+
