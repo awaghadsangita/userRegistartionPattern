@@ -7,6 +7,14 @@ if [[ $firstName =~ $nameRegex ]]
 then
 	echo "Valid FirstName"
 else
-	echo "Invalid LastName"
+	echo "Invalid Firstname"
+fi
+echo "Enter the Last Name"
+read lastName
+if [[ $lastName =~ $nameRegex ]]
+then
+	echo "Valid Lastname"
+else
+	echo "Invalid Lastname"
 fi
 
